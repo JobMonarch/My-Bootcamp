@@ -1,6 +1,6 @@
 package module2;
 
-public class Activity_1 {
+public class VariableAssignmentActivity_1 {
     public static void main(String[] args) {
         int number = 0; // our starting value
 
