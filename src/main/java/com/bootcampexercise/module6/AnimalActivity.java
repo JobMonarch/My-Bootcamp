@@ -3,20 +3,18 @@ package com.bootcampexercise.module6;
 public class AnimalActivity {
     public static void main(String arg[]) {
 
-        // Use interface references
-        Animal cat = new Cat();
+        Animal cat = new Cat(); //using the interface animal references
         Animal dog = new Dog();
 
-        // Set animal to cat
-        Mammal catMammal = new Mammal("Whiskers");
+        Mammal catMammal = new Mammal("Whiskers"); //animal is set to cat
         catMammal.setAnimal(cat);
         catMammal.animalIsSleeping();
         catMammal.animalIsSpeaking();
 
         System.out.println("-----------------------------");
 
-        // Set animal to dog
-        Mammal dogMammal = new Mammal("Rex");
+
+        Mammal dogMammal = new Mammal("Rex"); //animal is set to dog
         dogMammal.setAnimal(dog);
         dogMammal.animalIsSleeping();
         dogMammal.animalIsSpeaking();

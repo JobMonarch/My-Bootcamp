@@ -5,12 +5,11 @@ public class Mammal {
     private Animal myAnimal;
     private String name;
 
-    // Constructor
-    public Mammal(String name) {
+    public Mammal(String name) { //constructor for mammal
         this.name = name;
     }
 
-    public void setAnimal(Animal animal) {
+    public void setAnimal(Animal animal) { //animal setter
         myAnimal = animal;
     }
 
