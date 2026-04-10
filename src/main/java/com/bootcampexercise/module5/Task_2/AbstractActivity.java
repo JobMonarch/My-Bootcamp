@@ -6,6 +6,9 @@ public class AbstractActivity {
         Rectangle rectangle = new Rectangle(); //reaches the rectangle class
 
         rectangle.setColor("Red"); //color setter
+        rectangle.setLength(10); //length setter
+        rectangle.setWidth(5); //width setter
+
         System.out.println("Rectangle Color: " + rectangle.getColor()); //color getter and printer
 
         System.out.println("Rectangle Area: " + rectangle.calculateArea()); //area calculation
@@ -19,6 +22,7 @@ public class AbstractActivity {
         Circle circle = new Circle(); //reaches the circle class
 
         circle.setColor("Blue"); //color setter
+        circle.setRadius(5); //radius setter
         System.out.println("Circle Color: " + circle.getColor()); //color getter and printer
 
         System.out.println("Circle Area: " + circle.calculateArea()); //area calculation
