@@ -1,6 +1,7 @@
 package com.bootcampexercise.module10.Task_2;
 
 import com.bootcampexercise.module10.Task_1.Person;
+import java.util.List;
 
 public class Employee extends Person {
     private String jobTitle;
@@ -51,5 +52,15 @@ public class Employee extends Person {
     public String introduce() {
         return "My name is " + getName() + " and i am " + getAge() + " years old\n" +
                 "I work as a(n) " + jobTitle + " in " + company + " and my salary is " + salary;
+    }
+
+    public static String getHighestPaidEmp(List<Employee> empList) {
+        Employee highest = empList.get(0);
+        for (Employee emp : empList) {
+            if (emp.getSalary() > highest.getSalary()) {
+                highest = emp;
+            }
+        }
+        return highest.getName();
     }
 }
